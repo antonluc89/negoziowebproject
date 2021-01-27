@@ -12,7 +12,7 @@ public class Negozio {
 	public Negozio() {
 	}
 
-	public Negozio( String nome, String indirizzo, String numeroTelefonico) {
+	public Negozio(String nome, String indirizzo, String numeroTelefonico) {
 		super();
 		this.nome = nome;
 		this.indirizzo=indirizzo;

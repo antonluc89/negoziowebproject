@@ -32,10 +32,8 @@ public class InsertServlet extends HttpServlet {
 
 		NegozioService negozioServiceInstance = MyServiceFactory.getNegozioServiceInstance();
 
-//		Long idNegozioInsertParse = null;
-//		String idNegozioDAInserire = null;
+
 		int numeroArticoliParse=0;
-//		String idNegozioDaInserire = request.getParameter("idNegozio");
 		String nomeDaInserire = request.getParameter("nomeInput");
 		String partitaIvaDaInserire = request.getParameter("partitaIvaInput");
 		String numeroArticoliDaInserire = request.getParameter("numeroArticoliInput");

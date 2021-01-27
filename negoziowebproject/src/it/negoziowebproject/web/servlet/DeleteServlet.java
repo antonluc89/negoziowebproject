@@ -40,7 +40,7 @@ public class DeleteServlet extends HttpServlet {
 					.cercaPerId(Long.parseLong(idParameterNegozioDelete));
 			MyServiceFactory.getNegozioServiceInstance().elimina(negozioDaRimuovere);
 			String rimozioneEffettuata = ("Il negozio con id: " + negozioDaRimuovere.getIdNegozio() + " è stato rimosso dalla lista");
-			request.setAttribute("rimozioneRiuscita", rimozioneEffettuata);
+			request.setAttribute("rimozioneEffettuata", rimozioneEffettuata);
 			request.setAttribute("listAttributeNegozio", MyServiceFactory.getNegozioServiceInstance().listNegozi());
 			destinazione = "listaNegozi.jsp";
 			RequestDispatcher rd = request.getRequestDispatcher(destinazione);
